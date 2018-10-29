@@ -82,8 +82,8 @@ ENV COPY_REFERENCE_FILE_LOG $JENKINS_HOME/copy_reference_file.log
 
 USER ${user}
 
-COPY cloudbees-referrer.txt /usr/share/jenkins/ref/.cloudbees-referrer.txt
-COPY jenkins-support /usr/local/bin/jenkins-support
+COPY referrer.txt /usr/share/jenkins/ref/.cloudbees-referrer.txt
+COPY jenkins-support.sh /usr/local/bin/jenkins-support
 COPY jenkins.sh /usr/local/bin/jenkins.sh
 ENTRYPOINT ["/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
