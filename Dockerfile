@@ -5,7 +5,7 @@ USER root
 
 # A default admin user
 ENV ADMIN_USER=admin \
-    ADMIN_PASSWORD=password
+    ADMIN_PASSWORD=pass1@word
 ENV MAVEN_NAME apache-maven-3.3.9
 ENV MAVEN_HOME /opt/maven/
 
@@ -38,3 +38,6 @@ RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s
     chmod +x ./kubectl && \
     mv ./kubectl /usr/local/bin/kubectl && \
     curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
+    
+ # Grant jenkins_home from root to jenkins
+ RUN chown jenkins:jenkins -R /var/jenkins_home
