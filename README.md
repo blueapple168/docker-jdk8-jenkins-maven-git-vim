@@ -1,12 +1,6 @@
-# docker-jdk8-jenkins-maven-git-vim
+## docker-jdk8-jenkins-maven-git-vim
 
-### Ubuntu 16.04 LTS
-### OpenJDK 1.8.0 64 bit
-### Maven 3.3.9
-### Jenkins 2.138.2
-### git latest
-### curl
-### Vim
+Ubuntu 16.04 LTS OpenJDK 1.8.0_181-8u181-b13-1~deb9u1-b13 Maven 3.3.9 Jenkins 2.138.2 git 2.11.0 curl 7.52.1 Vim 8.0.0197
 
 # Usage
 
